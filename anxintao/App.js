@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import {__DEV__, Text, View} from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import Home from "./src/pages/home/Home";
@@ -7,7 +7,6 @@ import Products from "./src/pages/products/Products";
 import Icon from './src/icon/IconFonts'
 import ShopCar from "./src/pages/shopcar/ShopCar";
 import UserCenter from "./src/pages/mine/UserCenter";
-
 class TabBarItem extends React.Component {
     render() {
         return (
@@ -73,6 +72,5 @@ const TabNavigator = createBottomTabNavigator(
             },
         }
     }
-);
-
+)
 export default createAppContainer(TabNavigator);
